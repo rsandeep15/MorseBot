@@ -1,0 +1,21 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color:#009966;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+}
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+body{
+  margin: 10px;
+  display: block;
+  padding-top: 50px;
+}
