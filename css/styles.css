@@ -19,3 +19,8 @@ body{
   display: block;
   padding-top: 50px;
 }
+#translation {
+  padding: 20px;
+  margin: auto;
+  display: block;
+}
