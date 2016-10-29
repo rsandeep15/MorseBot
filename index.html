@@ -32,13 +32,18 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <h1> HELLO THIS IS MORSEBOT </h1>
-      <div class="input-group" id="translation">
-        <input type="text" aria-label="...">
-        <button class="btn btn-primary" aria-label="...">Translate</button>
+    <div class="container" id="translation">
+      <div class="col-md-10">
+        <div class="input-group" >
+          <label for="englishField">Text Translation</label>
+          <input id="englishField" type="text" aria-label="..." placeholder="Enter English Text">
+          <button class="btn btn-primary" aria-label="...">Translate</button>
+        </div>
+        <div class="view-messages pre-srollable">
+          <label for="messages">Messages</label>
+          <textarea id="messages" rows="10" cols="20" readonly></textarea>
+        </div>
       </div>
     </div>
-
   </body>
   </html>
