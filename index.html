@@ -66,10 +66,7 @@
         <div class="col-md-8 col-md-offset-2">
           <h1>MorseBot</h1>
           <input id="englishField" type="text" aria-label="..." placeholder="Enter English Text">
-          <button id="translate-button" class="btn btn-primary" aria-label="...">Translate</button>
-          <a href="#view" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-down animated"></i>
-          </a>
+          <a href="#view" id="translate-button" class="btn page-scroll" aria-label="...">Translate</a>
         </div>
       </div>
     </div>
@@ -81,8 +78,8 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
       <div class="view-messages pre-scrollable">
-        <label for="messages">Messages</label>
-        <textarea id="messages" rows="10" cols="20"></textarea>
+        <h2 for="messages">Messages</h2>
+        <textarea id="messages" rows="16" cols="100"></textarea>
       </div>
     </div>
   </div>
