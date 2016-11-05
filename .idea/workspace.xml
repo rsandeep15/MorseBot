@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7abdbb45-b626-4459-ae41-42344d070838" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/js/index.js" afterPath="$PROJECT_DIR$/template/js/index.js" />
     </list>
     <ignored path="MorseBot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -306,7 +305,13 @@
       <option name="project" value="LOCAL" />
       <updated>1478381125338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added translate functionality for letter 'z'">
+      <created>1478381209383</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478381209383</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -372,7 +377,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added translate functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added translate functionality" />
+    <MESSAGE value="added translate functionality for letter 'z'" />
+    <option name="LAST_COMMIT_MESSAGE" value="added translate functionality for letter 'z'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
