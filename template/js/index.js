@@ -40,6 +40,7 @@
                     case 'w': translated += '011'; break;
                     case 'x': translated += '1001'; break;
                     case 'y': translated += '1011'; break;
+                    case 'z': translated += '1100'; break;
                     case '1': translated += '01111'; break;
                     case '2': translated += '00111'; break;
                     case '3': translated += '00011'; break;
