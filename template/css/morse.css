@@ -40,7 +40,6 @@ p {
     line-height: 1.6;
   }
 }
-
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -113,7 +112,7 @@ p {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/1.jpg) no-repeat bottom center scroll;
+  background: url(../img/morse.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -129,6 +128,9 @@ p {
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
+}
+.intro .jumbotron {
+  background-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -155,44 +157,6 @@ p {
   background-color: #da9c11;
 }
 
-
-
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  font-size: 40px;
-  color: white;
-  background: transparent;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-.btn-circle:hover,
-.btn-circle:focus {
-  outline: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-}
-.btn-circle i.animated {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: -moz-transform;
-  -moz-transition-duration: 1s;
-}
-.btn-circle:hover i.animated {
-  -webkit-animation-name: pulse;
-  -moz-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-}
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -224,32 +188,9 @@ p {
 .content-section {
   padding-top: 100px;
 }
-.download-section {
-  width: 100%;
-  padding: 50px 0;
-  color: white;
-  background: url(../img/1.jpg) no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px;
-}
 @media (min-width: 767px) {
   .content-section {
     padding-top: 250px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
-  #map {
-    height: 400px;
-    margin-top: 250px;
   }
 }
 .btn {
@@ -260,36 +201,6 @@ p {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 0;
-}
-.btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
-  background-color: transparent;
-}
-.btn-default:hover,
-.btn-default:focus {
-  border: 1px solid #42DCA3;
-  outline: none;
-  color: black;
-  background-color: #42DCA3;
-}
-ul.banner-social-buttons {
-  margin-top: 0;
-}
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
-}
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
-  }
 }
 footer {
   padding: 50px 0;
