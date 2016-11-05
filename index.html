@@ -15,7 +15,7 @@
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class "container">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -31,13 +31,14 @@
           <li><a href="#metrics">View Metrics</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
     <div class="container" id="translation">
       <div class="col-md-10">
         <div class="input-group" >
           <label for="englishField">Text Translation</label>
           <input id="englishField" type="text" aria-label="..." placeholder="Enter English Text">
-          <button class="btn btn-primary" aria-label="...">Translate</button>
+          <button id="translate-button" class="btn translate-button" aria-label="...">Translate</button>
         </div>
         <div class="view-messages pre-srollable">
           <label for="messages">Messages</label>
@@ -45,5 +46,6 @@
         </div>
       </div>
     </div>
+  <script src="./js/index.js"></script>
   </body>
   </html>
