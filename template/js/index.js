@@ -62,6 +62,15 @@
             // add text to translated text container
             textArea.val(translated);
 
+            $.ajax({
+                url: 'http://localhost:8080?text='+translated,
+                crossDomain: true,
+                success: function(result){
+                $("#div1").html('okay');
+            }, error: function(result) {
+                $("#div1").html('error');
+            }});
+
             // remove text in input field
             input.val('');
         });

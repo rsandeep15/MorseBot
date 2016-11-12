@@ -15,8 +15,9 @@ function onRequest(request, response){
 				console.log("Could not insert entry");
 				console.log(entry);
 			}
+			response.setHeader('Access-Control-Allow-Origin', '*');
 			response.end();
 		});
 	});
 }
-http.createServer(onRequest).listen(8005);
+http.createServer(onRequest).listen(8080);
