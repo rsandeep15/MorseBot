@@ -3,6 +3,8 @@
  */
 
 (function () {
+    var height = $(window).height();
+    $("header, section").height(height);
     // add click listener for button
     $('#translate-button')
         .on('click', function (e) {
