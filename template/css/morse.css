@@ -22,7 +22,7 @@ h1 {
   letter-spacing: 1px;
 }
 h2 {
-  margin: 0 0 35px;
+  margin: 0 -30px 35px 35px;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bolder;
@@ -136,6 +136,11 @@ p {
 #englishField {
   width: 600px;
   height: 40px;
+}
+
+input[type="text"] {
+  font-size: 25px;
+  font-family: Arial;
 }
 
 #translate-button {
