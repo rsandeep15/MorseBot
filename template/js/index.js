@@ -63,7 +63,7 @@
             textArea.val(translated);
 
             $.ajax({
-                url: 'http://localhost:8080?text='+translated,
+                url: 'http://192.168.2.3:8080?morse=' + translated + '&english=' +content,
                 crossDomain: true,
                 success: function(result){
                 $("#div1").html('okay');

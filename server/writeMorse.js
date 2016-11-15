@@ -9,8 +9,8 @@ function onRequest(request, response){
 	var queryData = url.parse(request.url, true).query;
 	MongoClient.connect(mongoURL,
 	function(err, db) {
-		var entry = {"text" : queryData.text};
-		db.collection('qpfallteam3').insert(entry,
+		var entry = {"morse" : queryData.morse, "english" : queryData.english};
+		db.collection('MorseBot').insert(entry,
 		function(err, entry){
 			if (err){
 				console.log("Could not insert entry");
