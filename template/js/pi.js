@@ -1,26 +1,31 @@
 
 $(document).ready(function(){
   $.ajax({
-      url: 'http://128.54.235.118:8085?field=morse',
+      url: 'http://192.168.2.3?field=morse',
       crossDomain: true,
+      dataType: "text",
       success: function(result){
-      console.log(result);
-      console.log("Dots: " + result['.'] + " Dashes: " + result['-']);
-
+        var data = $.parseJSON(result) ;
+      console.log(data);
+      console.log("Dots: " + data["."] + " Dashes: " + data["-"]);
+      var dotsPercentage = Math.floor(100 * (data['.']/(data['.'] + data['-'])));
+      var dashesPercentage = Math.floor(100 * (data['-']/(data['.'] + data['-'])));
       var distribution = document.getElementById('dot-dash').getContext("2d");
       var pieData = [
         {
-          value: Math.floor(100 * (result['.']/(result['.'] + result['-']))),
-          color: "#878BB7"
+          value: dotsPercentage,
+          color: "#878BB7",
+          label: "Dots"
         },
         {
-          value: Math.floor(100 * (result['-']/(result['.'] + result['-']))),
-          color: "#4BCAB5"
+          value: dashesPercentage,
+          color: "#4BCAB5",
+          label: "Dashes"
         }
       ];
       var pieOptions = {
-        segmentShowStroke : false,
-        animateScale : true
+        segmentShowStroke : true,
+        animateScale : true,
       }
       new Chart(distribution).Pie(pieData, pieOptions);
   }, error: function(result) {
