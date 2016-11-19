@@ -4,6 +4,7 @@ $(document).ready(function(){
       url: 'http://128.54.235.118:8085?field=morse',
       crossDomain: true,
       success: function(result){
+      console.log(result);
       console.log("Dots: " + result['.'] + " Dashes: " + result['-']);
 
       var distribution = document.getElementById('dot-dash').getContext("2d");
