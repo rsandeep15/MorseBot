@@ -8,7 +8,7 @@ $(document).ready(function(){
   }, error: function(result) {
       $("#div1").html('error');
   }});
-  var distribution = $("#dot-dash").getContext("2d");
+  var distribution = document.getElementById('dot-dash').getContext("2d");
   var pieData = [
     {
       value: 20,
