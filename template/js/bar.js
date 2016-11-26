@@ -25,7 +25,7 @@ $(document).ready(function(){
           ]
       };
       var distribution = document.getElementById('alphabet').getContext("2d");
-      new Chart(distribution).Bar(data);
+      new Chart(distribution).Bar(data, { scaleFontColor: "#ffffff" });
   }, error: function(result) {
       $("#div1").html('error');
   }});

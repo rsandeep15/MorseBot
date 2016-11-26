@@ -12,12 +12,12 @@ $(document).ready(function(){
       var pieData = [
         {
           value: dotsPercentage,
-          color: "#878BB7",
+          color: "#CC9966",
           label: "Dots"
         },
         {
           value: dashesPercentage,
-          color: "#4BCAB5",
+          color: " #CC6633",
           label: "Dashes"
         }
       ];
