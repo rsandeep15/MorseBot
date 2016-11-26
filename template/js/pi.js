@@ -1,13 +1,11 @@
 
 $(document).ready(function(){
   $.ajax({
-      url: 'http://192.168.2.3:8085?field=morse',
+      url: 'http://192.168.1.119:8085?field=morse',
       crossDomain: true,
       dataType: "text",
       success: function(result){
         var data = $.parseJSON(result) ;
-      console.log(data);
-      console.log("Dots: " + data["."] + " Dashes: " + data["-"]);
       var dotsPercentage = Math.floor(100 * (data['.']/(data['.'] + data['-'])));
       var dashesPercentage = Math.floor(100 * (data['-']/(data['.'] + data['-'])));
       var distribution = document.getElementById('dot-dash').getContext("2d");
