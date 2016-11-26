@@ -53,7 +53,7 @@
                     case '8': translated += '---..,'; break;
                     case '9': translated += '----.,'; break;
                     case '0': translated += '-----,'; break;
-                    case ' ': translated += ' / '; break;
+                    case ' ': translated += '/'; break;
                     default : console.log(chars[i]);
                 }
             }

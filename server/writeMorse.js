@@ -9,7 +9,7 @@ function onRequest(request, response){
 	var queryData = url.parse(request.url, true).query;
 	MongoClient.connect(mongoURL,
 	function(err, db) {
-		var entry = {"morse" : queryData.morse, "english" : queryData.english};
+		var entry = {"morse" : queryData.morse, "english" : queryData.english, "source": "web"};
 		db.collection('MorseBot').insert(entry,
 		function(err, entry){
 			if (err){
