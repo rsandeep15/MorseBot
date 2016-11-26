@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
   $.ajax({
-      url: 'http://192.168.1.119:8085?field=morse',
+      url: 'http://192.168.2.3:8085?field=morse',
       crossDomain: true,
       dataType: "text",
       success: function(result){
