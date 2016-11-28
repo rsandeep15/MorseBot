@@ -60,7 +60,8 @@
             console.log(translated);
 
             // add text to translated text container
-            textArea.val(translated + "/");
+            translated = translated + "/";
+            textArea.val(translated);
 
             $.ajax({
                 url: 'http://192.168.2.3:8080?morse=' + translated + '&english=' +content,
