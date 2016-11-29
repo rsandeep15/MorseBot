@@ -10,7 +10,7 @@
         .on('click', function (e) {
             e.preventDefault();
             var input = $('#englishField');
-            var textArea = $('#messages');
+            var textArea = $('#message');
             var content = input.val();
             var translated = '';
             var chars = content.toLowerCase().split('');
@@ -57,20 +57,21 @@
                     default : console.log(chars[i]);
                 }
             }
-            console.log(translated);
-
+            var archive = $('#messages');
             // add text to translated text container
             translated = translated + "/";
             textArea.val(translated);
+            archive.val(archive.val() + "web: " + translated + " " + content);
 
+            // Latest translation
             $.ajax({
                 url: 'http://192.168.2.3:8080?morse=' + translated + '&english=' +content,
                 crossDomain: true,
                 success: function(result){
-                $("#div1").html('okay');
             }, error: function(result) {
-                $("#div1").html('error');
             }});
+
+
 
             // remove text in input field
             input.val('');
