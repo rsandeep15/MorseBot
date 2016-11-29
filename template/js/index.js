@@ -60,7 +60,6 @@
             var archive = $('#messages');
             // add text to translated text container
             translated = translated + "/";
-            textArea.val(translated);
             archive.val(archive.val() + "web: " + translated + " " + content + "\n");
 
             // Latest translation
