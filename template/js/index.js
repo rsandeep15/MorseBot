@@ -21,8 +21,8 @@
                     case 'b': translated += '-...,'; break;
                     case 'c': translated += '-.-.,'; break;
                     case 'd': translated += '-..,'; break;
-                    case 'e': translated += '-,'; break;
-                    case 'f': translated += '--.-,'; break;
+                    case 'e': translated += '.,'; break;
+                    case 'f': translated += '..-.,'; break;
                     case 'g': translated += '--.,'; break;
                     case 'h': translated += '....,'; break;
                     case 'i': translated += '..,'; break;
@@ -35,7 +35,7 @@
                     case 'p': translated += '.--.,'; break;
                     case 'q': translated += '--.-,'; break;
                     case 'r': translated += '.-.,'; break;
-                    case 's': translated += '---,'; break;
+                    case 's': translated += '...,'; break;
                     case 't': translated += '-,'; break;
                     case 'u': translated += '..-,'; break;
                     case 'v': translated += '...-,'; break;
