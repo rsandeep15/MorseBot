@@ -60,13 +60,13 @@
             var archive = $('#messages');
             // add text to translated text container
             translated = translated + "/";
-            archive.val(archive.val() + "web: " + translated + " " + content + "\n");
 
             // Latest translation
             $.ajax({
                 url: 'http://192.168.2.3:8080?morse=' + translated + '&english=' +content,
                 crossDomain: true,
                 success: function(result){
+                    archive.val(archive.val() + "web: " + translated + " " + content + "\n");
             }, error: function(result) {
             }});
 
